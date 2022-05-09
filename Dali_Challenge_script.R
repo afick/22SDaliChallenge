@@ -84,7 +84,7 @@ qual <- ggplot(mediangini, aes(long, lat, group = group)) +
 # Show the graphs next to each other
 gini / qual
 
-ggsave("figures/figure1.pdf", width = fig_h, height = fig_w)
+ggsave("figures/figure1&2.pdf", width = fig_h, height = fig_w)
 
 # Figure 3 ----------------------------------------------------------------
 
@@ -123,7 +123,7 @@ ggplot(uglong, aes(decile, value)) +
        caption = source) +
   theme_few()
 
-ggsave("figures/figure1&2.pdf", width = fig_w, height = fig_h)
+ggsave("figures/figure3.pdf", width = fig_w, height = fig_h)
 
 # Figure 4 ----------------------------------------------------------------
 
@@ -179,7 +179,7 @@ ggplot(top10gdp, aes(quintile, perc)) +
         legend.key.width = unit(1, 'cm')) +
   guides(fill = guide_colorbar(title.vjust = .9))
 
-ggsave("figures/figure3.pdf", width = fig_w, height = fig_h)
+ggsave("figures/figure4.pdf", width = fig_w, height = fig_h)
 
 
 # Challenge 2 -------------------------------------------------------------
